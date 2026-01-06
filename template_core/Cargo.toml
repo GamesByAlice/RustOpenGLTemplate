@@ -1,0 +1,15 @@
+[package]
+name = "template_core"
+version = "0.1.0"
+edition = "2021"
+
+[lints]
+workspace = true
+
+[dependencies]
+thiserror = { workspace = true }
+tracing = { workspace = true }
+
+[dev-dependencies]
+mockall = "0.13"
+tempfile = "3.14"

@@ -1,0 +1,28 @@
+[workspace]
+members = [
+  "template_core",
+  "template_graphics", 
+  "template_app",
+]
+resolver = "2"
+
+[workspace.lints.rust]
+warnings = "deny"
+unused_imports = "deny"
+unused_variables = "deny"
+dead_code = "deny"
+
+[workspace.lints.clippy]
+all = "deny"
+pedantic = "deny"
+
+[workspace.dependencies]
+glow = "0.16"
+glutin = "0.32.3"
+glutin-winit = "0.5.0"
+winit = { version = "0.30.12", default-features = false, features = ["rwh_06"] }
+raw-window-handle = { version = "0.6.2", features = ["std"] }
+nalgebra = "0.34"
+tracing = "0.1.40"
+tracing-subscriber = "0.3.18"
+thiserror = "2.0.17"

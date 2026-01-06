@@ -1,0 +1,21 @@
+[package]
+name = "template_graphics"
+version = "0.1.0"
+edition = "2021"
+
+[lints]
+workspace = true
+
+[dependencies]
+template_core = { path = "../template_core" }
+glow = { workspace = true }
+glutin = { workspace = true }
+glutin-winit = { workspace = true }
+winit = { workspace = true }
+raw-window-handle = { workspace = true }
+nalgebra = "0.34"
+tracing = { workspace = true }
+bytemuck = "1.18"
+
+[dev-dependencies]
+mockall = "0.13"
